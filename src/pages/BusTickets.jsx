@@ -27,7 +27,7 @@ const BusTickets = ({origin,destination}) => {
     const getBusArray = async (origin,destination)=>{
         setLoading(true)
         try {
-            const response = await axios.get(`http://localhost:3000/getRoutes`,{
+            const response = await axios.get(`https://rebus-clone-backend.onrender.com/getRoutes`,{
                 params:{
                     "origin" : origin,
                     "destination" : destination
